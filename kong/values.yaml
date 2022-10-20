@@ -518,6 +518,7 @@ ingressController:
   ingressClass: kong
   # annotations for IngressClass resource (Kubernetes 1.18+)
   ingressClassAnnotations: {}
+  installCRDs: false
 
   ## Define any volumes and mounts you want present in the ingress controller container
   ## Volumes are defined above in deployment.userDefinedVolumes
