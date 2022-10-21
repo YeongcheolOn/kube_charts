@@ -15,7 +15,7 @@ global:
   ##   - myRegistryKeySecretName
   ##
   imagePullSecrets: []
-  storageClass: ""
+  storageClass: "nfs-server-nfs-server-provisioner"
 
 ## @section Common parameters
 ##
@@ -439,7 +439,7 @@ primary:
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
     ##   GKE, AWS & OpenStack)
     ##
-    storageClass: ""
+    storageClass: "nfs-server-nfs-server-provisioner"
     ## @param primary.persistence.annotations MariaDB primary persistent volume claim annotations
     ##
     annotations: {}
@@ -820,7 +820,7 @@ secondary:
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
     ##   GKE, AWS & OpenStack)
     ##
-    storageClass: ""
+    storageClass: "nfs-server-nfs-server-provisioner"
     ## @param secondary.persistence.annotations MariaDB secondary persistent volume claim annotations
     ##
     annotations: {}
@@ -830,7 +830,7 @@ secondary:
       - ReadWriteOnce
     ## @param secondary.persistence.size MariaDB secondary persistent volume size
     ##
-    size: 8Gi
+    size: 2Gi
     ## @param secondary.persistence.selector Selector to match an existing Persistent Volume
     ## selector:
     ##   matchLabels:
