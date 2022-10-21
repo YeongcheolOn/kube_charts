@@ -15,7 +15,7 @@ global:
   ##   - myRegistryKeySecretName
   ##
   imagePullSecrets: []
-  storageClass: "nfs"
+  # storageClass: "nfs"
 
 ## @section Common parameters
 ##
@@ -439,7 +439,7 @@ primary:
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
     ##   GKE, AWS & OpenStack)
     ##
-    storageClass: "nfs"
+    # storageClass: "nfs"
     ## @param primary.persistence.annotations MariaDB primary persistent volume claim annotations
     ##
     annotations: {}
