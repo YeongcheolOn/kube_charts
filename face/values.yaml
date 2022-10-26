@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: yeongcheolon/face
+  repository: kyong94/face-recognition
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
+  tag: "ubuntu20.04-openjdk11"
 
 imagePullSecrets: []
 nameOverride: ""
